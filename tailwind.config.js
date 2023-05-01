@@ -12,6 +12,7 @@ module.exports = {
         buttonOrange: '#F48023',
         borderGrayColor: '#EAEAEA',
         primaryColor: '#1682FD',
+        placeHolderTextColor: '#808080',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
