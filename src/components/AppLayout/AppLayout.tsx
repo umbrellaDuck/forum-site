@@ -10,7 +10,7 @@ interface Props {
 const AppLayout = ({ children }: Props) => {
   return (
     <>
-      <header className='flex justify-between px-9 py-6 border-border-gray border-b items-center'>
+      <header className='justify-between px-9 py-6 border-border-gray border-b items-center fixed w-full flex'>
         <Link href='/' className='flex'>
           <Image alt='Logo' src={logo} className='w-6 h-7 mr-4' />
           <span>
@@ -33,7 +33,7 @@ const AppLayout = ({ children }: Props) => {
           </Link>
         </div>
       </header>
-      <main>{children}</main>
+      <main className='pt-[86px] h-screen'>{children}</main>
     </>
   );
 };
