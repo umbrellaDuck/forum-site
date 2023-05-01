@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        buttonGrayColor: '#BCBBBC',
+        buttonOrange: '#F48023',
+        borderGrayColor: '#EAEAEA',
+        primaryColor: '#1682FD',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,4 +21,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
