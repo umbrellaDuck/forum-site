@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'border-gray': '#BCBBBC',
-        'btn-orange': '#F48023',
-        EA: '#EAEAEA',
-        '#1682': '#1682FD',
+        buttonGrayColor: '#BCBBBC',
+        buttonOrange: '#F48023',
+        borderGrayColor: '#EAEAEA',
+        primaryColor: '#1682FD',
+        placeHolderTextColor: '#808080',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
