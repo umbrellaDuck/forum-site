@@ -16,7 +16,7 @@ const Header = () => {
         <div className='flex'>
           <Link
             href='/signup'
-            className='bg-buttonOrange px-5 py-3 rounded-[5px] flex text-white items-center mr-4 h-[38px]'
+            className='bg-buttonOrange px-5 rounded-[5px] flex text-white items-center mr-4 h-[38px]'
           >
             <Image alt='Logo' src={userPlus} className='w-3 h-3 mr-3' />
             <span className='text-xs font-black'>Register</span>
