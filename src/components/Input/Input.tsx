@@ -4,14 +4,14 @@ import checkIcon from '../../../public/check.svg';
 interface Props {
   isValid: boolean;
 }
-const rootClassName = 'rounded-[5px] border-borderGrayColor border';
+const rootClassName = 'rounded-[5px] border-borderGray border';
 
 const Input = ({ isValid, ...rest }: Props) => {
   return (
     <>
       <div className='relative'>
         <input
-          className='rounded-[5px] border-borderGrayColor border placeholder-placeHolderTextColor placeholder:text-sm h-[42px] px-4'
+          className='rounded-[5px] border-borderGray border placeholder-placeHolderTextColor placeholder:text-sm h-[42px] px-4'
           {...rest}
         />
         {isValid && (
