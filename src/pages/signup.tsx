@@ -7,7 +7,7 @@ const SignUp = () => {
     <>
       <AppLayout>
         <div className='grid grid-cols-5 min-h-full'>
-          <div className='col-span-2'>asdf</div>
+          <div className='col-span-2 bg-borderGray'></div>
           <div className='col-span-3 '>
             <Image alt='frinds' src={friends} className='h-full' />
           </div>
