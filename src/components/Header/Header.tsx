@@ -6,7 +6,7 @@ import logo from '../../../public/logo.svg';
 const Header = () => {
   return (
     <>
-      <header className='flex justify-between px-9 py-6 border-border-gray border-b items-center fixed w-full'>
+      <header className='flex justify-between px-9 py-6 border-border-gray border-b items-center fixed w-full bg-white z-50'>
         <Link href='/' className='flex'>
           <Image alt='Logo' src={logo} className='w-6 h-7 mr-4' />
           <span>
