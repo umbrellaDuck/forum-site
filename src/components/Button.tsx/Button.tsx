@@ -24,7 +24,7 @@ const Button = ({
       'px-3 h-[38px] rounded-[5px] text-sm': size === 'md',
       'opacity-50 border-black border': disabled,
       'bg-buttonOrange text-white ': color === 'orange',
-      'bg-buttonGrayColor font-': color === 'gray',
+      'bg-buttonGray font-': color === 'gray',
       'bg-primaryColor text-white': color === 'blue',
     },
     className,
