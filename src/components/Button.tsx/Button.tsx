@@ -1,14 +1,15 @@
 import { ReactNode } from 'react';
 import cn from 'clsx';
 
-interface Props {
+interface Props extends React.ComponentPropsWithoutRef<'button'> {
   children: ReactNode;
   className?: string;
-  size?: 'xs' | 'md';
+  size?: 'xs' | 'md' | 'full';
   disabled?: boolean;
   color?: 'blue' | 'gray' | 'orange';
 }
 
+const basicClassName = 'flex items-center justify-center';
 const Button = ({
   children,
   className,
@@ -19,14 +20,15 @@ const Button = ({
 }: Props) => {
   const rootClassName = cn(
     {
-      'px-[5px] py-[10px] rounded-[100px] text-sm': size === 'xs',
-      'px-3 py-5 rounded-[5px] text-sm': size === 'md',
-      'opacity-50': disabled,
+      'px-[5px] h-[25px] rounded-[100px] text-sm': size === 'xs',
+      'px-3 h-[38px] rounded-[5px] text-sm': size === 'md',
+      'opacity-50 border-black border': disabled,
       'bg-buttonOrange text-white ': color === 'orange',
       'bg-buttonGray font-': color === 'gray',
       'bg-primaryColor text-white': color === 'blue',
     },
-    className
+    className,
+    basicClassName
   );
 
   return (
