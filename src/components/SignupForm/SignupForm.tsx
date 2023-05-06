@@ -9,7 +9,7 @@ const defaultValues = {
   repeatPassword: '',
 };
 
-const LoginForm = () => {
+const SignupForm = () => {
   const {
     control,
     getValues,
@@ -98,4 +98,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;
