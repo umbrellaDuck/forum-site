@@ -1,9 +1,8 @@
 import AppLayout from '@/components/AppLayout/AppLayout';
+import LoginForm from '@/components/LoginForm/LoginForm';
 import Image from 'next/image';
-import friends from '../../public/friend.jpg';
-import LoginForm from '@/components/SignupForm/SignupForm';
-
-const SignUp = () => {
+import computer from '../../public/computer.jpg';
+const Login = () => {
   return (
     <>
       <AppLayout>
@@ -12,7 +11,7 @@ const SignUp = () => {
             <LoginForm />
           </div>
           <div className='col-span-3'>
-            <Image alt='frinds' src={friends} className='h-full' />
+            <Image alt='computer' src={computer} className='h-full w-full' />
           </div>
         </div>
       </AppLayout>
@@ -20,4 +19,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
