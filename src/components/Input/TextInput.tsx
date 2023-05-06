@@ -22,7 +22,7 @@ export interface TControl<T extends FieldValues>
 const rootClass =
   'rounded-[5px] border-borderGrayColor border placeholder-placeHolderTextColor placeholder:text-sm h-[42px] px-4 w-full placeholder:text-buttonGrayColor placeholder:font-light';
 
-const Input = <T extends FieldValues>({
+const TextInput = <T extends FieldValues>({
   control,
   name,
   rules,
@@ -34,12 +34,19 @@ const Input = <T extends FieldValues>({
     field,
     fieldState: { invalid },
   } = useController({ name, rules, control });
+
   const val = field.value;
+  const labelField = name[0].toUpperCase() + name.slice(1);
 
   return (
-    <>
+    <div className='relative'>
+      <label
+        htmlFor='register-password'
+        className='text-base mb-2 inline-block'
+      >
+        {labelField}
+      </label>
       <input className={rootClassName} {...rest} {...field} />
-
       {val && (
         <Image
           alt='status-icon'
@@ -47,8 +54,8 @@ const Input = <T extends FieldValues>({
           className='absolute right-4 bottom-[14px]'
         />
       )}
-    </>
+    </div>
   );
 };
 
-export default Input;
+export default TextInput;
